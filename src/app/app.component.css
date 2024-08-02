@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.headercontainer{
+    width: 100%;
+    min-height: 50px;
+    background-color: bisque;
+}
+.headeritem{
+    width: 100px;
+    text-align: center;
+    align-content: center;
+    min-height: 50px;
+}
