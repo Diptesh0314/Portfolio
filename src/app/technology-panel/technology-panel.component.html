@@ -1,1 +1,4 @@
-<p>technology-panel works!</p>
+<div class="logo-container" #logoContainer>
+    <img *ngFor="let logo of logos" [src]="logo.src" [alt]="logo.alt" class="logo" />
+  </div>
+  
