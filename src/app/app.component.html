@@ -1,3 +1,8 @@
+<head>
+  <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+</head>
 <div class="headercontainer">
   <div class="headeritem">
     Home
@@ -6,3 +11,22 @@
 <div class="bodycontainer">
   Welcome to my page
 </div>
+
+<div id="link" style="cursor: pointer;" (click)="downloadFile($event)">
+Download Resume
+</div>
+<app-technology-panel></app-technology-panel>
+<script>
+  function downloadFile(){
+    console.log("This is test download");
+  }
+  $(document).ready(function () {
+      $("#link").click(function (e) {
+        console.log("hello");
+          e.preventDefault();
+          
+          window.location.href 
+              = "../assets/Diptesh_Das_Dotnet_Resume.pdf";
+      });
+  });
+</script>
